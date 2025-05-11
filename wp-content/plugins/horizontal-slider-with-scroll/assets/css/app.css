@@ -1,0 +1,417 @@
+.hss-content-area.is-disabled {
+    display: none;
+}
+
+.entry-portfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    position: relative;
+    height: 100%;
+    background-color: #F9F9F9;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.entry-portfolio--hovercard {
+    cursor: pointer;
+}
+
+.Scroll__container.is-disabled {
+    display: none;
+}
+
+.hss-content-area.is-active {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.entry-portfolio img {
+    width: 100%;
+    display: block;
+}
+
+.entry-portfolio--hovercard .hovercard__title, .entry-portfolio--hovercard .hovercard_terms, .entry-portfolio--hovercard .hovercard_desc, .entry-portfolio--hovercard .hovercard_btn {
+    z-index: 999;
+    -webkit-transition: opacity .3s ease, -webkit-transform .35s ease-out;
+    transition: opacity .3s ease, -webkit-transform .35s ease-out;
+    transition: transform .35s ease-out, opacity .3s ease;
+    transition: transform .35s ease-out, opacity .3s ease, -webkit-transform .35s ease-out;
+}
+
+.entry-portfolio--hovercard .hovercard__title, .no-touch .entry-portfolio--hovercard.enable-hover .hovercard__title--popup {
+    font-size: 1vw
+}
+
+
+.entry-portfolio--hovercard .hovercard_terms span, .no-touch .entry-portfolio--hovercard.enable-hover span {
+    background: #fff;
+    color: #000;
+    font-size: 9px;
+    padding: 5px 15px;
+    border-radius: 40px;
+    text-transform: capitalize !important;
+}
+
+.entry-portfolio--hovercard .hovercard_desc {
+    color: #fff;
+    font-size: 0.8vw;
+}
+
+.hovercarddesc {
+    color: #fff;
+    font-size: 0.8vw;
+}
+
+.entry-portfolio--hovercard .hovercard_btn {
+    color: #fff;
+    font-size: 1vw;
+}
+
+.no-touch .entry-portfolio--hovercard.enable-hover:hover:before, .no-touch .entry-portfolio--hovercard.enable-hover:hover:after, .no-touch .entry-portfolio--hovercard.enable-hover.has-no-thumbnail:before, .no-touch .entry-portfolio--hovercard.enable-hover.has-no-thumbnail:after {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    z-index: 9999999999;
+}
+
+.no-touch .entry-portfolio--hovercard.enable-hover:hover .hovercard__inner, .no-touch .entry-portfolio--hovercard.enable-hover.has-no-thumbnail .hovercard__inner {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.entry-portfolio--hovercard, .entry-portfolio--hovercard a {
+    color: #fcfcfc;
+    color: #fff;
+    font-size: 1vw;
+}
+
+.entry-portfolio--hovercard .hovercard__title a {
+    color: #fcfcfc;
+    text-shadow: 0px 0.03em 0.05em rgb(13 13 13 / 67%);
+}
+
+.no-touch .entry-portfolio--hovercard.enable-hover:hover .hovercard__title, .no-touch .entry-portfolio--hovercard.enable-hover.has-no-thumbnail .hovercard__title, .no-touch .entry-portfolio--hovercard.enable-hover:hover .hovercard_terms, .no-touch .entry-portfolio--hovercard.enable-hover:hover .hovercard_desc, .no-touch .entry-portfolio--hovercard.enable-hover:hover .hovercard_btn {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    opacity: 0;
+}
+
+.no-touch .entry-portfolio--hovercard.enable-hover:hover .hovercard__popup, .no-touch .entry-portfolio--hovercard.enable-hover .hovercard__popup:hover {
+       display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 1;
+}
+
+.no-touch .entry-portfolio--hovercard .hovercard__popup {
+    z-index: 999999;
+/*     width: 100%;
+    height: 100%; */
+    padding: 1.875rem;
+    background-color: rgba(13, 13, 13, 0.75);
+    -webkit-transition: opacity .35s ease;
+    transition: opacity .35s ease;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+	top:0px;
+	right:0
+}
+
+
+.sepline {
+    background-color: #ccc;
+    border: 0;
+    height: 1px;
+    width: 46px;
+    margin: 0 0 0.41575em;
+}
+
+.no-touch .entry-portfolio--hovercard.enable-hover:before, .no-touch .entry-portfolio--hovercard.enable-hover:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 1.875rem;
+    left: 1.875rem;
+    right: 1.875rem;
+    bottom: 1.875rem;
+    opacity: 0;
+    width: 100%;
+    width: calc(100% - 3.75rem);
+    height: 100%;
+    height: calc(100% - 3.75rem);
+    pointer-events: none;
+    z-index: 225;
+    -webkit-transition: opacity .4s ease-in, -webkit-transform .4s ease;
+    transition: opacity .4s ease-in, -webkit-transform .4s ease;
+    transition: transform .4s ease, opacity .4s ease-in;
+    transition: transform .4s ease, opacity .4s ease-in, -webkit-transform .4s ease;
+}
+
+.no-touch .entry-portfolio--hovercard.enable-hover:after {
+    border-left: 1px solid #d6d6d6;
+    border-right: 1px solid #d6d6d6;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+}
+
+.no-touch .entry-portfolio--hovercard.enable-hover:before {
+    border-top: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+}
+
+.no-touch .entry-portfolio--hovercard.enable-hover .hovercard__inner {
+/*     width: 100%;
+    height: 100%; */
+    padding: 1.875rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px);
+    opacity: 0;
+    -webkit-transition: opacity .3s ease, -webkit-transform .35s ease-out;
+    transition: opacity .3s ease, -webkit-transform .35s ease-out;
+    transition: transform .35s ease-out, opacity .3s ease;
+    transition: transform .35s ease-out, opacity .3s ease, -webkit-transform .35s ease-out;
+}
+
+#mainhssec h1, #mainhssec h2, #mainhssec h3, #mainhssec h4, #mainhssec h5, #mainhssec h6 {
+    line-height: 1.2;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+}
+
+#mainhssec h2 {
+    font-size: 1.2rem;
+}
+
+.hovercard__title--popup {
+    margin-top: 0px;
+}
+
+
+.no-touch .entry-portfolio--hovercard.enable-hover .hovercard__subtitle {
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: "Merriweather";
+    text-transform: none;
+    font-style: italic;
+    margin-bottom: 0.875rem;
+}
+
+/*Scroll*/
+.iScrollHorizontalScrollbar {
+    position: absolute;
+    bottom: 0px;
+    z-index: 9999;
+    height: 10px;
+    right: auto;
+    width: calc(100% - 16px);
+    left: 8px;
+    background-color: rgba(252, 252, 252, 0.4);
+    border-radius: 2px;
+}
+
+.iScrollHorizontalScrollbar .iScrollIndicator {
+    position: relative;
+    border-radius: 2px;
+    background-color: #141414;
+    cursor: move;
+    height: 100%;
+    width: 25%;
+}
+
+.iScrollHorizontalScrollbar.iScrollLoneScrollbar {
+    opacity: 1 !important;
+    /* background: #b4a076; */
+    padding-right: 0px !important;
+    border-radius: 0px;
+}
+
+.Scroll__container {
+    position: relative;
+    overflow: hidden;
+}
+
+.Scroll__canvas .js__hcol {
+    float: left;
+}
+
+.Scroll__item {
+    margin-left: 2px;
+}
+
+.Scroll__item {
+    margin-right: 2px;
+}
+
+.has-touch .entry-portfolio--hovercard .hovercard__popup {
+    display: none;
+}
+
+/*Scroll*/
+.hovercard__thumbnail {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 30px;
+}
+
+.hssthumbnail {
+    height: 100%;
+    width: 100%;
+    /* background: black;
+    opacity: 0.4; */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.withouthovercard {
+    z-index: 999999999;
+}
+
+
+/*Loader*/
+.loader,
+.loader:after {
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+}
+
+.loader {
+    margin: 1% 0px 0px 96%;
+    font-size: 3px;
+    position: relative;
+    text-indent: -9999em;
+    border-top: 1.1em solid rgba(255, 255, 255, 0.2);
+    border-right: 1.1em solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1.1em solid rgba(255, 255, 255, 0.2);
+    border-left: 1.1em solid #ffffff;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load8 1.1s infinite linear;
+    animation: load8 1.1s infinite linear;
+}
+
+@-webkit-keyframes load8 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes load8 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+#loadingDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 1;
+    z-index: 9999999999999999999999999;
+}
+
+
+#myProgress {
+    width: 100%;
+    background-color: grey;
+  }
+  
+  #myBar {
+    width: 1%;
+    height: 5px;
+    background-color: green;
+  }
+
+
+@media screen and (max-width: 767px) {
+    .entry-portfolio--hovercard {
+        cursor: pointer;
+    }
+
+    .entry-portfolio {
+        height: 281px;
+    }
+
+    .hss-content-area.is-disabled {
+        display: block;
+    }
+
+    .is-active {
+        display: none;
+    }
+
+    .entry-portfolio--hovercard a ,.entry-portfolio--hovercard .hovercarddesc{
+        font-size: 5vw;
+    }
+
+    .no-touch .entry-portfolio--hovercard.enable-hover:hover .hovercard__popup {
+        display: none
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .entry-portfolio--hovercard {
+        margin-bottom: 40px !important;
+    }
+
+    /*    .hovercard__thumbnail .mobile__thumbnail img {
+        display: block;
+    }
+ */
+    .hovercard__thumbnail .hssthumbnail img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .content-area {
+        width: 100%;
+    }
+}
